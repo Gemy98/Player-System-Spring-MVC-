@@ -14,8 +14,19 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-
-</beans>
+	<!-- add Support for component scanning -->
+	<context:component-scan base-package="com.spring"/>
+	<!-- add Support for Validation and conversion -->
+	
+	<!-- Define the View Resolver -->
+	<mvc:annotation-driven/>
+	
+	<bean
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+			<property name="prefix" value="/WEB-INF/view/" />
+			<property name="suffix" value=".jsp" />
+	</bean>
+	</beans>
 
 
 
