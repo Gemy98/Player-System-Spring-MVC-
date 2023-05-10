@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class MainApp {
 
 	public static void main(String[] args) throws SQLException {
-
+/*
 		String username = "root"; 
 		String Password = "root";
 		
@@ -30,7 +30,7 @@ public class MainApp {
 		finally {
 			con.close();
 		}
-		
+	*/	
 	}
 
 }
