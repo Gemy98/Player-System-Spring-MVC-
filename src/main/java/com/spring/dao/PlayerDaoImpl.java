@@ -2,6 +2,8 @@ package com.spring.dao;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,6 +27,7 @@ public class PlayerDaoImpl implements PlayerDAO {
  
 
 	@Override
+	@Transactional
 	public List<Player> getPlayers() {
 		Session session = sessionFactory.getCurrentSession();
 		
