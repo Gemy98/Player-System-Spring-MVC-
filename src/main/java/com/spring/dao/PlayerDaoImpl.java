@@ -27,7 +27,6 @@ public class PlayerDaoImpl implements PlayerDAO {
  
 
 	@Override
-	@Transactional
 	public List<Player> getPlayers() {
 		Session session = sessionFactory.getCurrentSession();
 		
