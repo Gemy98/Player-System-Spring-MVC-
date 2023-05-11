@@ -30,7 +30,7 @@ public class PlayerDaoImpl implements PlayerDAO {
 	public List<Player> getPlayers() {
 		Session session = sessionFactory.getCurrentSession();
 		
-		Query<Player> query = session.createQuery("from player",Player.class);
+		Query<Player> query = session.createQuery("from Player",Player.class);
 		return query.getResultList();
 	}
 
