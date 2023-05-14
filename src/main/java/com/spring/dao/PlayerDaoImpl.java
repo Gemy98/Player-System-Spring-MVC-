@@ -2,7 +2,6 @@ package com.spring.dao;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
 
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -15,7 +14,7 @@ import com.spring.model.Player;
 @Repository
 public class PlayerDaoImpl implements PlayerDAO {
 
-	
+	@Autowired
 	private SessionFactory sessionFactory ; 
 	
 	

@@ -12,12 +12,12 @@ import com.spring.model.Player;
 
 @Service
 public class PlayerServiceImpl implements PlayerService {
-
-	private PlayerDAO playerDao ; 
 	
 	@Autowired
-	public PlayerServiceImpl(PlayerDAO playerDao) {
-		this.playerDao = playerDao;
+	private PlayerDAO playerDao ; 
+	   
+	
+	public PlayerServiceImpl() {
 	}
 
 	
@@ -25,7 +25,6 @@ public class PlayerServiceImpl implements PlayerService {
 	@Transactional
 	public List<Player> allPlayers() {
 
-		
 		
 		return playerDao.getPlayers();
 	}
