@@ -12,7 +12,7 @@ import com.spring.model.Player;
 import com.spring.service.PlayerService;
 import com.spring.service.PlayerServiceImpl;
 
-//localhost8080:player/Fifa
+//localhost8080:player/fifa
 
 @Controller
 @RequestMapping("/fifa")
