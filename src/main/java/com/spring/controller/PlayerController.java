@@ -6,13 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.model.Player;
 import com.spring.service.PlayerService;
 import com.spring.service.PlayerServiceImpl;
 
-//localhost8080:player/fifa
+//localhost8080:player/
 
 @Controller
 @RequestMapping("/fifa")
@@ -37,9 +38,6 @@ public class PlayerController {
 		
 		return "fifa-players";	
 	}
-	
-	
-	
 	
 	
 }
