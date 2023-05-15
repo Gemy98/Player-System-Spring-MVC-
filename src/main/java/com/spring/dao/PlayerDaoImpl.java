@@ -33,4 +33,16 @@ public class PlayerDaoImpl implements PlayerDAO {
 		return query.getResultList();
 	}
 
+
+	
+	@Override
+	public void addPlayers(Player player) {
+
+		Session session = sessionFactory.getCurrentSession();
+
+		
+		session.saveOrUpdate(player);
+		
+	}
+
 }
