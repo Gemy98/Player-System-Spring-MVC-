@@ -44,6 +44,7 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<a href="add" type="button" class="btn btn-primary">Add player</a>
 
 </body>
 </html>

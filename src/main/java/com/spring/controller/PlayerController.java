@@ -42,8 +42,8 @@ public class PlayerController {
 	
 	//localhost8080:player/fifa/add
 	@GetMapping("/add")
-	public String savePage() {
-		
+	public String savePage(Model model) {
+		model.addAttribute("player",new Player());
 		return "addPlayer" ; 
 	}
 	

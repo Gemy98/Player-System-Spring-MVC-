@@ -20,7 +20,6 @@ public class Player {
 	private String name ; 
 	
 	@Column(name = "player_number")
-
 	private int number ;
 	
 	@Column(name = "player_address")

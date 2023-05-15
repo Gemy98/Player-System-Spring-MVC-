@@ -10,24 +10,24 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<fo:form action="" modelAttribute="Player">
+<fo:form action="" modelAttribute="player">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">name</label>
-      <fo:input path="" class="form-control" placeholder="name" />
+      <fo:input path="name" class="form-control" placeholder="name" />
     </div>
     <div class="form-group col-md-6">
       <label for="inputPassword4">number</label>
-      <fo:input path="" class="form-control"  placeholder="number" />
+      <fo:input path="number" class="form-control"  placeholder="number" />
     </div>
   </div>
   <div class="form-group">
     <label for="inputAddress">Address</label>
-    <fo:input path=""  class="form-control" placeholder="Address" />
+    <fo:input path="address"  class="form-control" placeholder="Address" />
   </div>
   <div class="form-group">
     <label for="inputAddress2">Phone number</label>
-    <fo:input path="" class="form-control" placeholder="phone number" />
+    <fo:input path="phone" class="form-control" placeholder="phone number" />
   </div>
   
   
