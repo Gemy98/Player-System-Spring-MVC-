@@ -61,6 +61,14 @@ public class PlayerController {
 		model.addAttribute("players",players);*/
 		return "redirect:/fifa/players";
 		
+	}
+	
+	@GetMapping("/showplayer")
+	public String showPlayer(int id) {
+		Player p = playerSerivce.showPlayer(id);
+		
+	//	m.addAttribute("EditPlayer",p);
+		return "addPlayer";
 		
 	}
 	
