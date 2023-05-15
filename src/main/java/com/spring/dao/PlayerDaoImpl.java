@@ -45,4 +45,14 @@ public class PlayerDaoImpl implements PlayerDAO {
 		
 	}
 
+
+
+	@Override
+	public Player getPlayer(int id) {
+		Session session = sessionFactory.getCurrentSession();
+		
+	
+		return session.get(Player.class,id);
+	}
+
 }

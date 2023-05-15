@@ -33,7 +33,7 @@
   
  
   
-  <button type="submit" class="btn btn-primary">Add</button>
+  <button type="submit" class="btn btn-primary">Done</button>
 </fo:form>
 
 
