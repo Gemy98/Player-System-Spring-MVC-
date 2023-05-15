@@ -13,7 +13,7 @@ import com.spring.model.Player;
 import com.spring.service.PlayerService;
 import com.spring.service.PlayerServiceImpl;
 
-//localhost8080:player/
+//localhost8080:player/fifa
 
 @Controller
 @RequestMapping("/fifa")
@@ -27,6 +27,7 @@ public class PlayerController {
 	public PlayerController() {
 	}
 	 
+	//localhost8080:player/fifa/players
 	@GetMapping("/players")
 	public String getplayers(Model model){
 		
@@ -38,6 +39,14 @@ public class PlayerController {
 		
 		return "fifa-players";	
 	}
+	
+	//localhost8080:player/fifa/add
+	@GetMapping("/add")
+	public String savePage() {
+		
+		return "addPlayer" ; 
+	}
+	
 	
 	
 }
