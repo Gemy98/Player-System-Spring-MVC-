@@ -10,7 +10,7 @@
 <meta charset="UTF-8">
 </head>
 <body>
-<fo:form action="savePlayer" modelAttribute="player" method="GET">
+<fo:form action="savePlayer" modelAttribute="player">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">name</label>
