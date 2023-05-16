@@ -40,6 +40,7 @@ public class PlayerServiceImpl implements PlayerService {
 
 
 	@Override
+	@Transactional
 	public Player showPlayer(int id) {
 		
 		return 	playerDao.getPlayer(id);

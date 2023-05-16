@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.spring.model.Player;
 import com.spring.service.PlayerService;
@@ -64,9 +65,9 @@ public class PlayerController {
 	}
 	
 	@GetMapping("/showplayer")
-	public String showPlayer(int id) {
+	public String showPlayer(@RequestParam("playerId")int id,Model model) {
 		Player p = playerSerivce.showPlayer(id);
-		
+		model.addAttribute("player",p);
 	//	m.addAttribute("EditPlayer",p);
 		return "addPlayer";
 		
