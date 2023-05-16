@@ -73,5 +73,14 @@ public class PlayerController {
 		
 	}
 	
+	@GetMapping("/deleteplayer")
+	public String deletePlayer(@RequestParam("playerId")int id,Model model) {
+		Player p = playerSerivce.showPlayer(id);
+		playerSerivce.deletePlayer(p);
+	//	m.addAttribute("EditPlayer",p);
+		return "redirect:/fifa/players";
+		
+	}
+	
 	
 }

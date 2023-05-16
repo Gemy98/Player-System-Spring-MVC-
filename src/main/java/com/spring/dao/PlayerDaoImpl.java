@@ -55,4 +55,12 @@ public class PlayerDaoImpl implements PlayerDAO {
 		return session.get(Player.class,id);
 	}
 
+
+
+	@Override
+	public void deletePlayer(Player player) {
+		Session session = sessionFactory.getCurrentSession();
+		session.delete(player);
+	}
+
 }
