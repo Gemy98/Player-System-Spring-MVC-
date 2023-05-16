@@ -12,6 +12,7 @@
 <body>
 <fo:form action="savePlayer" modelAttribute="player">
   <div class="form-row">
+        <fo:hidden path="id"  />
     <div class="form-group col-md-6">
       <label for="inputEmail4">name</label>
       <fo:input path="name" class="form-control" placeholder="name" />
